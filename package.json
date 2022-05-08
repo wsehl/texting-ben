@@ -1,0 +1,23 @@
+{
+  "name": "texting-ben",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "nodemon -e ts -x ts-node src/index.ts",
+    "start": "NODE_ENV=production node dist/index.js",
+    "build": "ncc build src/index.ts -o dist -m",
+    "prettier": "prettier --write 'src/**/*.ts'"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "telegraf": "^4.8.1",
+    "weighted": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.33",
+    "@vercel/ncc": "^0.33.4",
+    "nodemon": "^2.0.16",
+    "prettier": "^2.6.2",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  }
+}
